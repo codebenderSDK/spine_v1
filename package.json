@@ -1,5 +1,5 @@
 {
-  "name": "full-stack-codebender-boilerplate",
+  "name": "codebender-boilerplate",
   "version": "1.0.0",
   "description": "Boilerplate for a decentralized application with multiple technologies",
   "main": "index.js",
