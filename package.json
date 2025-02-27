@@ -1,0 +1,40 @@
+// package.json
+{
+  "name": "full-stack-dapp-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for a decentralized application with multiple technologies",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "test": "truffle test",
+    "compile": "truffle compile",
+    "migrate": "truffle migrate"
+  },
+  "dependencies": {
+    "@unstoppabledomains/resolution": "^8.3.3",
+    "ethers": "^5.7.2",
+    "fabric": "^5.3.0",
+    "gridjs": "^6.0.6",
+    "ipfs-http-client": "^56.0.2",
+    "node-sass": "^8.0.0",
+    "sass-loader": "^13.2.0",
+    "three": "^0.148.0",
+    "web3": "^1.8.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.3",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "style-loader": "^3.3.1",
+    "truffle": "^5.7.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
