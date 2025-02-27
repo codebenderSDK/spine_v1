@@ -1,6 +1,6 @@
 // package.json
 {
-  "name": "full-stack-dapp-boilerplate",
+  "name": "full-stack-codebender-boilerplate",
   "version": "1.0.0",
   "description": "Boilerplate for a decentralized application with multiple technologies",
   "main": "index.js",
