@@ -1,0 +1,86 @@
+// src/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Stack DApp Boilerplate</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">DApp Boilerplate</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#blockchain">Blockchain</a></li>
+        <li><a href="#3d">3D Demo</a></li>
+      </ul>
+      <div class="wallet-connection">
+        <button id="connect-wallet">Connect Wallet</button>
+        <div id="user-address" class="hidden"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Welcome to the Full Stack DApp Boilerplate</h1>
+        <p>A comprehensive starting point for decentralized applications with multiple technologies</p>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <h2>Features Overview</h2>
+        <p>Explore the capabilities of this boilerplate project</p>
+        <div id="grid-table"></div>
+      </div>
+    </section>
+
+    <section id="blockchain" class="blockchain">
+      <div class="container">
+        <h2>Blockchain Integration</h2>
+        <p>Connect to Ethereum and interact with smart contracts</p>
+        <div class="blockchain-demo">
+          <div class="contract-interaction">
+            <h3>Contract Interaction</h3>
+            <div id="contract-form">
+              <input type="text" id="contract-input" placeholder="Enter a value">
+              <button id="store-value">Store Value</button>
+              <button id="retrieve-value">Retrieve Value</button>
+            </div>
+            <div id="contract-result"></div>
+          </div>
+          <div class="ipfs-demo">
+            <h3>IPFS File Upload</h3>
+            <input type="file" id="ipfs-file-input">
+            <button id="upload-ipfs">Upload to IPFS</button>
+            <div id="ipfs-result"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="3d" class="three-d">
+      <div class="container">
+        <h2>3D Visualization</h2>
+        <p>Explore Three.js and Fabric.js canvas integration</p>
+        <div class="canvas-section">
+          <div id="three-canvas"></div>
+          <div id="fabric-canvas-container">
+            <canvas id="fabric-canvas"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Full Stack DApp Boilerplate</p>
+    </div>
+  </footer>
+</body>
+</html>
