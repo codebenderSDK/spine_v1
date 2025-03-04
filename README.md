@@ -1,4 +1,5 @@
 # codebender spine_v1
+
 basic boilerplate codebase
 
 ```
@@ -26,7 +27,30 @@ full-stack-dapp-boilerplate/
 │   └── index.js
 ├── test/
 │   └── simpleStorage.test.js
+├── .env.config
+├── .gitignore
 ├── package.json
 ├── truffle-config.js
+├── ReadMe.md
 └── webpack.config.js
+```
+
+First of all you will need to gather all this information from polygonscan, basescan, lineascan, pinata and unstoppablelogin. Open `.env.config` add all values and save it as `.env`.
+
+```
+POLY_URL=
+AMOI_URL=
+POLYGONSCAN_API=
+BASE_URL=
+BASETEST_URL=
+BASESCAN_API=
+LINEA_URL=
+LINEA_TEST=
+LINEASCAN_API=
+WALLET_PRVKEY=
+ADMIN_WALLET=
+PINATA_JWT=
+GATEWAY_URL=
+PINATA_API_KEY=
+PINATA_API_SECRET=
 ```
