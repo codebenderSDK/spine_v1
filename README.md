@@ -38,14 +38,14 @@ full-stack-dapp-boilerplate/
 First of all you will need to gather all this information from polygonscan, basescan, lineascan, pinata and unstoppablelogin. Open `.env.config` add all values and save it as `.env`.
 
 ```
-POLY_URL=
-AMOI_URL=
+POLY_URL=https://polygon-mainnet.public.blastapi.io
+AMOI_URL=wss://polygon-amoy-bor-rpc.publicnode.com
 POLYGONSCAN_API=
-BASE_URL=
-BASETEST_URL=
+BASE_URL=https://base.llamarpc.com
+BASETEST_URL=wss://base-sepolia-rpc.publicnode.com
 BASESCAN_API=
-LINEA_URL=
-LINEA_TEST=
+LINEA_URL=https://linea-rpc.publicnode.com
+LINEA_TEST=https://linea-sepolia.drpc.org
 LINEASCAN_API=
 WALLET_PRVKEY=
 ADMIN_WALLET=
