@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Codebender Boilerplate",
   "main": "index.js",
-  "author":"@dissimilis_tu"
+  "author":"@dissimilis_tu",
   "scripts": {
     "start": "webpack serve --mode=development --open",
     "build": "webpack --mode=production",
