@@ -1,47 +1,27 @@
-// src/js/ipfsSetup.js
-import { create } from 'ipfs-http-client';
-
+const { PinataSDK } = require("pinata-web3");
 export const setupIPFS = () => {
-  const ipfsFileInput = document.getElementById('ipfs-file-input');
-  const uploadIpfsButton = document.getElementById('upload-ipfs');
-  const ipfsResult = document.getElementById('ipfs-result');
-  
-  // Function to upload file to IPFS
-  const uploadToIPFS = async () => {
+  const ipfsFileInput = document.getElementById("ipfs-file-input");
+  const uploadIpfsButton = document.getElementById("upload-ipfs");
+  const ipfsResult = document.getElementById("ipfs-result");
+  const pinata = new PinataSDK({
+    pinataJwt: process.env.PINATA_JWT,
+    pinataGateway: process.env.GATEWAY_URL,
+  });
+  async function uploader() {
     try {
       if (!ipfsFileInput.files || ipfsFileInput.files.length === 0) {
-        ipfsResult.textContent = 'Please select a file first';
+        ipfsResult.textContent = "Please select a file first";
         return;
       }
-      
-      // Connect to IPFS (using Infura as an example)
-      const ipfs = create({
-        host: 'ipfs.infura.io',
-        port: 5001,
-        protocol: 'https'
-      });
-      
-      ipfsResult.textContent = 'Uploading to IPFS...';
-      
-      // Read the file
       const file = ipfsFileInput.files[0];
-      const fileBuffer = await file.arrayBuffer();
-      
-      // Upload to IPFS
-      const result = await ipfs.add(Buffer.from(fileBuffer));
-      
-      // Display result
-      ipfsResult.innerHTML = `
-        File uploaded to IPFS!<br>
-        CID: ${result.path}<br>
-        <a href="https://ipfs.io/ipfs/${result.path}" target="_blank">View on IPFS</a>
-      `;
+      const upload = await pinata.upload.file(file);
+      let url = `https://ipfs.io/ipfs/${upload.IpfsHash}/`;
+      let show = `<div id="ipfsdisplay"><img src="${url}" id="ipfsdisplayimg"/></div>`;
+      console.log(upload, url);
+      ipfsResult.innerHTML = show;
     } catch (error) {
-      console.error('Error uploading to IPFS:', error);
-      ipfsResult.textContent = `Error: ${error.message}`;
+      console.log(error);
     }
-  };
-  
-  // Event listener
-  uploadIpfsButton.addEventListener('click', uploadToIPFS);
+  }
+  uploadIpfsButton.addEventListener("click", uploader);
 };
