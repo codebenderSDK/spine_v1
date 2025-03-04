@@ -1,6 +1,6 @@
 # codebender spine_v1
 
-basic boilerplate codebase
+## CODEBASE
 
 ```
 full-stack-dapp-boilerplate/
