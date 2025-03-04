@@ -61,22 +61,22 @@ PINATA_API_SECRET=
 
 ### first steps
 
-`mkdir <YOUR_PROJECT>` create project directory
-`cd <YOUR_PROJECT>` change to project directory
-`git clone https://github.com/codebenderSDK/spine_v1.git .` clone the repository
-`npm i` install the codebase
+- `mkdir <YOUR_PROJECT>` create project directory
+- `cd <YOUR_PROJECT>` change to project directory
+- `git clone https://github.com/codebenderSDK/spine_v1.git .` clone the repository
+- `npm i` install the codebase
 
 ### blockchain migration
 
-`npm run migrate:polygon` migrate to polygon
-`npm run migrate:amoi` migrate to polygon testnet
-`npm run migrate:base` migrate to base
-`npm run migrate:basepolia` migrate to base testnet
-`npm run migrate:linea` migrate to linea
-`npm run migrate:lineapolia` migrate to linea testnet
+- `npm run migrate:polygon` migrate to polygon
+- `npm run migrate:amoi` migrate to polygon testnet
+- `npm run migrate:base` migrate to base
+- `npm run migrate:basepolia` migrate to base testnet
+- `npm run migrate:linea` migrate to linea
+- `npm run migrate:lineapolia` migrate to linea testnet
 
 ### production and development
 
-`npm run build` build production environment
-`npm run dev` build development environment
-`npm start` run development environment
+- `npm run build` build production environment
+- `npm run dev` build development environment
+- `npm start` run development environment
