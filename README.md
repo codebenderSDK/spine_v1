@@ -80,3 +80,6 @@ PINATA_API_SECRET=
 - `npm run build` build production environment
 - `npm run dev` build development environment
 - `npm start` run development environment
+- visit `https://localhost:3000` in your browser to see the result
+
+## USAGE
