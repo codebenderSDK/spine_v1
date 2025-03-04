@@ -1,86 +1,108 @@
-// src/index.html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>codebender</title>
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="logo">DApp Boilerplate</div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#blockchain">Blockchain</a></li>
-        <li><a href="#3d">3D Demo</a></li>
-      </ul>
-      <div class="wallet-connection">
-        <button id="connect-wallet">Connect Wallet</button>
-        <div id="user-address" class="hidden"></div>
-      </div>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>codeBENDERv1</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="btn">codeBENDER</div>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="container">
-        <h1>Welcome to the Full Stack DApp Boilerplate</h1>
-        <p>A comprehensive starting point for decentralized applications with multiple technologies</p>
-      </div>
-    </section>
+        <div class="btn"><a href="#home">Editor</a></div>
+        <div class="btn"><a href="#playerintegration">Integration</a></div>
+        <div class="btn"><a href="#features">Features</a></div>
+        <div class="btn"><a href="#blockchain">Blockchain</a></div>
+        <div class="btn"><a href="#3d">3D/Media</a></div>
 
-    <section id="features" class="features">
-      <div class="container">
-        <h2>Features Overview</h2>
-        <p>Explore the capabilities of this boilerplate project</p>
-        <div id="grid-table"></div>
-      </div>
-    </section>
+        <div class="wallet-connection btn" id="connect-wallet">
+          Connect
+          <div id="user-address" class="hidden"></div>
+        </div>
+      </nav>
+    </header>
 
-    <section id="blockchain" class="blockchain">
-      <div class="container">
-        <h2>Blockchain Integration</h2>
-        <p>Connect to Ethereum and interact with smart contracts</p>
-        <div class="blockchain-demo">
-          <div class="contract-interaction">
-            <h3>Contract Interaction</h3>
-            <div id="contract-form">
-              <input type="text" id="contract-input" placeholder="Enter a value">
-              <button id="store-value">Store Value</button>
-              <button id="retrieve-value">Retrieve Value</button>
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <h2>codeBENDER</h2>
+          <p>A groundbreaking tool for all dNFT creators.</p>
+          <div id="vp">
+            <img src="assets/images/bg.jpg" class="display-ad" id="bg" />
+            <img src="assets/images/bender.png" class="display-ad" id="bender" />
+          </div>
+        </div>
+      </section>
+
+      <section id="playerintegration" class="hero2">
+        <div class="container">
+          <h2>Integrate the player into your project</h2>
+          <p>The easiest way to display dNFTs reliably. Find Everything you need to integrate including a step by step manual and an extended documentation on dNFTs <a href="https://github.com/codebenderSDK/spine_v1">here</a>.</p>
+        </div>
+      </section>
+      <section id="features" class="features">
+        <div class="container">
+          <h2>Features Overview</h2>
+          <p>Explore the dependencies & capabilities of this boilerplate project</p>
+          <div id="grid-table"></div>
+        </div>
+      </section>
+      <section id="blockchain" class="blockchain">
+        <div class="container">
+          <h2>Blockchain Integration</h2>
+          <p>Connect to Ethereum and interact with smart contracts</p>
+          <div class="blockchain-demo">
+            <div class="contract-interaction">
+              <h3>Contract Interaction</h3>
+              <div id="contract-form">
+                <input type="text" id="contract-input" placeholder="Enter a value" />
+                <button id="store-value">Store Value</button>
+                <button id="retrieve-value">Retrieve Value</button>
+              </div>
+              <div id="contract-result"></div>
             </div>
-            <div id="contract-result"></div>
-          </div>
-          <div class="ipfs-demo">
-            <h3>IPFS File Upload</h3>
-            <input type="file" id="ipfs-file-input">
-            <button id="upload-ipfs">Upload to IPFS</button>
-            <div id="ipfs-result"></div>
+            <hr />
+            <div class="ipfs-demo">
+              <h3>IPFS File Upload</h3>
+              <input type="file" id="ipfs-file-input" />
+              <button id="upload-ipfs">Upload to IPFS</button>
+              <div id="ipfs-result"></div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="3d" class="three-d">
+      <section id="3d" class="three-d">
+        <div class="container">
+          <h2>3D Visualization</h2>
+          <p>Explore Three.js and Fabric.js canvas integration</p>
+          <div class="canvas-section">
+            <div id="three-canvas"></div>
+            <div id="fabric-canvas-container">
+              <canvas id="fabric-canvas"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="articles" class="linklist">
+        <div class="container">
+          <h2>Relevant dNFT Articles</h2>
+          <p>These authors said something very relevant everyone should know.</p>
+          <a href="https://chain.link/education-hub/what-is-dynamic-nft">What Is a Dynamic NFT (dNFT)</a> - Chainlink<br />
+          <a href="https://chain.link/education-hub/dynamic-nft-use-cases">Dynamic NFT Examples | 16 Use Cases</a> - Chainlink<br />
+          <a href="https://nftevening.com/a-guide-to-dynamic-nfts/">A Guide to Dynamic NFTs</a> - Casey Anderson<br />
+          <a href="https://pixelplex.io/blog/dynamic-nfts/">Key Use Cases and Examples</a> - Darya Yatchenko<br />
+          <a href="https://nftplazas.com/what-are-dynamic-nfts/">What are Dynamic NFTs? Everything You Need to Know!</a> - Abdulrasaq Ariwoola<br />
+        </div>
+      </section>
+    </main>
+
+    <footer>
       <div class="container">
-        <h2>3D Visualization</h2>
-        <p>Explore Three.js and Fabric.js canvas integration</p>
-        <div class="canvas-section">
-          <div id="three-canvas"></div>
-          <div id="fabric-canvas-container">
-            <canvas id="fabric-canvas"></canvas>
-          </div>
-        </div>
+        <p>&copy; 2025 codeBENDER</p>
       </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Full Stack DApp Boilerplate</p>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
