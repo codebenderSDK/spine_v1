@@ -35,6 +35,8 @@ full-stack-dapp-boilerplate/
 └── webpack.config.js
 ```
 
+## SETUP REQUIREMENTS
+
 First of all you will need to gather all this information from polygonscan, basescan, lineascan, pinata and unstoppablelogin. Open `.env.config` add all values and save it as `.env`.
 
 ```
@@ -54,3 +56,16 @@ GATEWAY_URL=
 PINATA_API_KEY=
 PINATA_API_SECRET=
 ```
+
+## INSTALL
+
+`npm i`
+`npm run migrate:polygon`
+`npm run migrate:amoi`
+`npm run migrate:base`
+`npm run migrate:basepolia`
+`npm run migrate:linea`
+`npm run migrate:lineapolia`
+`npm run build`
+`npm run dev`
+`npm start`
