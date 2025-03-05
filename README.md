@@ -1,6 +1,6 @@
-# codebender spine_v1
+# codeBENDER spine_v1
 
-basic boilerplate codebase
+## CODEBASE
 
 ```
 full-stack-dapp-boilerplate/
@@ -79,7 +79,19 @@ PINATA_API_SECRET=
 
 - `npm run build` build production environment
 - `npm run dev` build development environment
-- `npm start` run development environment
-- visit `https://localhost:3000` in your browser to see the result
 
 ## USAGE
+
+- `npm start` run development environment
+- visit `https://localhost:3000` in your browser to see the result
+- check if all features are functional
+- parallax image effect
+- connect wallet
+- gridjs table
+- set value in contract
+- read value from contract
+- upload file to ipfs
+- look for rotating cube in threejs canvas section
+- move objects in fabricjs canvas section
+
+##
